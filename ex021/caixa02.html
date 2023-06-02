@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #112B66, #1E4BB3, #2861E5);
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(99, 98, 98);
+            padding: 3PX;
+        }
+
+        nav > a { /* a é filha de nav */
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover { /* a é filha de nav, é quando o mouse estiver nela mudará para: */
+            text-decoration: underline;
+            color: red
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: rgba(211, 211, 211, 0.726);
+        }
+
+        article > aside { /* aside é filha de article */
+            background-color: rgb(155, 155, 155);
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Max Clean</h1>
+        <nav> <!-- Menu, para colocar links -->
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo Principal -->
+        <section id="assuntos"> <!-- sessão -->
+            <p>Esporte Tecnologia Política</p>
+        </section> 
+        <section id="noticias"> <!-- sessão -->
+            <article>
+                <h2>Notícias Sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi, nemo laborum cupiditate beatae vero, voluptate esse maxime natus recusandae distinctio quam id doloremque, facere suscipit dolorem reprehenderit ducimus sunt.</p>
+                <aside>
+                    <p>Artigo escrito por Wesley Salvino</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido por WesleySal</p>
+    </footer>
+</body>
+</html>
